@@ -1,12 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SOFAS</title>
-</head>
-<body>
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>HOMEWEAR WEBSITE</title>
+  </head>
+  <body>
+    <div class="nav_bar">
+      <div class="right_section">
+        <ul>
+          <a href="./mobileNav.html"><li>
+           
+
+            
+            <div class="burger_menu_container">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </div>
+          </li></a>
+          
+          <li id="home">HOME</li>
+          <li id="shop">SHOP</li>
+          <li id="magazine">MAGAZINE</li>
+        </ul>
+      </div>
+      <div class="left_section">
+        <ul>
+          <li><div class="cart_quantity"></div><img src="./images/icons/Cart Button.svg" /></li>
+          <li id='login'>LOGIN</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="search_bar">
+      <div class="search">
+        <input type="search" />
+      </div>
+      <div class="drop_down">
+        <select class="sorting_options">
+          <option value="Default">Best match</option>
+          <option value="Price1">Price: Low to High</option>
+          <option value="Price2">Price: High to Low</option>
+ 
+        </select>
+
+      </div>
+    </div>
+    <div class="content">
+      <div class="carousel_container">
+        <div class="buttons">
+          <button class="button-left">
+            <img
+              class="carousel_btn_left"
+              src="./images/shapes/Arrow.png"
+              alt=""
+            />
+          </button>
+
+          <button class="button-right">
+            <img
+              class="carousel_btn_right"
+              src="./images/shapes/Arrow (1).png"
+              alt=""
+            />
+          </button>
+        </div>
+        <div class="carousel_text">
+          <h3>CREATE YOUR CALM</h3>
+          <p>Relax right here</p>
+        </div>
+
+        <div class="carousel_slide">
+          <img
+            class="carousel_img"
+            id="lastClone"
+            src="./images/carouselimage1.png"
+            alt=""
+          />
+
+          <img
+            class="carousel_img"
+            src="./images/carouselimage2.png"
+            alt=""
+          />
+          <img
+            class="carousel_img"
+            src="./images/carouselimage1.png"
+            alt=""
+          />
+          <img
+            class="carousel_img"
+            id="firstClone"
+            src="./images/carouselimage2.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <hr class="page_separator" />
+
+    <div class="footer">
+      <div class="sections">
+        <ul class="footer_sections">
+          <li>ABOUT US</li>
+          <li>HOW CAN WE HELP</li>
+          <li>SHOP BY ROOM</li>
+          <li>SHOP BY STYLE</li>
+        </ul>
+        <div class="social_icons">
+          <ul>
+            <li><img src="./images/icons/instagram (1) 1.svg" /></li>
+            <li><img src="./images/icons/facebook-logo 1.svg" /></li>
+            <li><img src="./images/icons/twitter 1.svg" /></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="cart-logic.js"></script>
     <script src="products.js"></script>
-</body>
+    <script src="index.js"></script>
+    <script src="shop.js"></script>
+    <script src="carousel.js"></script>
+    <script src="product-page.js"></script>
+  </body>
 </html>
